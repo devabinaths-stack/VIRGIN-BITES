@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" fill="none">
+  <defs>
+    <linearGradient id="wall" x1="92" y1="48" x2="1070" y2="722" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#253D30"/><stop offset=".58" stop-color="#172920"/><stop offset="1" stop-color="#111C17"/>
+    </linearGradient>
+    <linearGradient id="counter" x1="514" y1="467" x2="524" y2="760" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#674638"/><stop offset="1" stop-color="#30231F"/>
+    </linearGradient>
+    <linearGradient id="rose" x1="275" y1="344" x2="432" y2="548" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9D6D9"/><stop offset=".48" stop-color="#E59AA7"/><stop offset="1" stop-color="#B95668"/>
+    </linearGradient>
+    <linearGradient id="tea" x1="535" y1="399" x2="680" y2="548" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D89D48"/><stop offset="1" stop-color="#8C4928"/>
+    </linearGradient>
+    <linearGradient id="badam" x1="774" y1="350" x2="920" y2="557" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF2D4"/><stop offset=".6" stop-color="#E9D4AA"/><stop offset="1" stop-color="#C6A975"/>
+    </linearGradient>
+    <linearGradient id="coffee" x1="949" y1="401" x2="1077" y2="545" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D39B6E"/><stop offset=".4" stop-color="#89573A"/><stop offset="1" stop-color="#402719"/>
+    </linearGradient>
+    <linearGradient id="glass" x1="-8" y1="0" x2="129" y2="0" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity=".09"/><stop offset=".19" stop-color="#FFFFFF" stop-opacity=".56"/><stop offset=".3" stop-color="#FFFFFF" stop-opacity=".06"/><stop offset=".77" stop-color="#FFFFFF" stop-opacity=".1"/><stop offset=".91" stop-color="#FFFFFF" stop-opacity=".37"/><stop offset="1" stop-color="#FFFFFF" stop-opacity=".04"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%" color-interpolation-filters="sRGB">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="16"/><feOffset dy="16"/><feComponentTransfer><feFuncA type="linear" slope=".42"/></feComponentTransfer><feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="soft"><feGaussianBlur stdDeviation="28"/></filter>
+    <pattern id="grain" width="110" height="90" patternUnits="userSpaceOnUse">
+      <path d="M7 17h28M68 41h23M24 72h17M83 12h12" stroke="#F5E8D5" stroke-opacity=".035" stroke-width="2"/>
+      <circle cx="52" cy="21" r="1.2" fill="#F5E8D5" fill-opacity=".08"/><circle cx="94" cy="74" r="1" fill="#F5E8D5" fill-opacity=".07"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="760" fill="url(#wall)"/>
+  <circle cx="275" cy="151" r="129" fill="#B95E68" fill-opacity=".13" filter="url(#soft)"/>
+  <circle cx="885" cy="170" r="154" fill="#C5A76B" fill-opacity=".1" filter="url(#soft)"/>
+  <path d="M0 526C217 477 373 510 568 489c242-26 401-9 632-61v332H0V526Z" fill="url(#counter)"/>
+  <path d="M0 526C217 477 373 510 568 489c242-26 401-9 632-61" stroke="#D6B78C" stroke-opacity=".3" stroke-width="3"/>
+  <rect width="1200" height="760" fill="url(#grain)"/>
+  <g opacity=".65">
+    <path d="M161 414c-12-41 7-64 25-85M193 406c-5-37 10-58 37-78M1013 344c15-44 6-73-10-100M1043 349c23-33 27-61 16-87" stroke="#C6A770" stroke-opacity=".56" stroke-width="3" stroke-linecap="round"/>
+    <path d="M184 353c-18 0-26-12-27-28 18-2 30 7 27 28ZM201 365c18-4 24-16 20-31-18 2-28 13-20 31ZM1022 274c-18-2-26-13-24-29 18 0 29 10 24 29ZM1046 293c17-6 21-19 15-33-18 5-26 17-15 33Z" fill="#A1B08A" fill-opacity=".68"/>
+  </g>
+  <g filter="url(#shadow)">
+    <!-- Rose milk: pink milk, ice and rose garnish -->
+    <ellipse cx="353" cy="567" rx="111" ry="18" fill="#100E0D" fill-opacity=".43"/>
+    <path d="M273 349h160l-14 198c-2 26-21 43-46 43h-40c-25 0-44-17-46-43l-14-198Z" fill="url(#rose)" stroke="#F8E8E7" stroke-opacity=".7" stroke-width="5"/>
+    <path d="M276 357h154l-3 31H279l-3-31Z" fill="#FFF4EF" fill-opacity=".72"/>
+    <path d="m306 391 31-22 26 25-31 21-26-24ZM367 406l28-24 22 28-28 23-22-27Z" fill="#F4DADB" fill-opacity=".78"/>
+    <path d="M287 421c34 16 94 16 130 0M293 500c30 12 86 13 117 0" stroke="#FFF5F0" stroke-opacity=".42" stroke-width="4"/>
+    <path d="m322 346 38-91" stroke="#E8D4B2" stroke-width="8" stroke-linecap="round"/>
+    <path d="M357 257c25-25 49-22 59-7-12 24-34 32-59 7Z" fill="#66885C"/>
+    <path d="M356 258c-30-16-52-5-55 14 23 16 44 12 55-14Z" fill="#839968"/>
+    <path d="M356 251c-3-24 12-37 28-35 9 20 0 34-28 35Z" fill="#C56474"/>
+    <path d="M353 252c-22-13-25-31-13-43 21 7 28 22 13 43ZM357 252c17-22 35-23 45-10-10 19-25 24-45 10Z" fill="#D77E89"/>
+    <circle cx="355" cy="252" r="10" fill="#F2D7C8"/>
+    <!-- Tea in a clear glass -->
+    <ellipse cx="605" cy="563" rx="94" ry="16" fill="#100E0D" fill-opacity=".38"/>
+    <path d="M534 395h144l-13 151c-2 24-19 39-42 39h-34c-23 0-40-15-42-39l-13-151Z" fill="url(#tea)" stroke="#F7E8D3" stroke-opacity=".76" stroke-width="5"/>
+    <path d="M539 405h134l-2 31H542l-3-31Z" fill="#E7B865" fill-opacity=".88"/>
+    <path d="M548 453c27 10 88 10 115 0M552 520c23 10 82 10 106 0" stroke="#FFF3D7" stroke-opacity=".4" stroke-width="4"/>
+    <path d="M555 388c-13-18 10-24-1-42M595 385c-14-20 11-26 0-45M634 387c-13-17 8-24-2-39" stroke="#F3E5CA" stroke-opacity=".62" stroke-width="5" stroke-linecap="round"/>
+    <path d="M537 394h138v155c0 23-18 39-41 39h-56c-23 0-41-16-41-39V394Z" fill="url(#glass)"/>
+    <path d="M548 545c27 16 89 15 116 0" stroke="#FFF" stroke-opacity=".66" stroke-width="4"/>
+    <!-- Badam milk with almond slivers -->
+    <ellipse cx="846" cy="567" rx="106" ry="18" fill="#100E0D" fill-opacity=".4"/>
+    <path d="M773 356h145l-13 192c-2 25-20 41-43 41h-33c-23 0-41-16-43-41l-13-192Z" fill="url(#badam)" stroke="#FFF8E9" stroke-opacity=".78" stroke-width="5"/>
+    <path d="M778 365h135l-2 29H780l-2-29Z" fill="#FFF7E8" fill-opacity=".8"/>
+    <path d="m801 356 21-28 21 28-20 14-22-14ZM849 354l20-25 20 26-20 14-20-15ZM816 411l27-22 20 28-28 18-19-24Z" fill="#F7E8C7"/>
+    <path d="M788 433c29 12 82 13 113 0M795 516c24 11 78 12 101 0" stroke="#FFFDF4" stroke-opacity=".56" stroke-width="4"/>
+    <path d="M777 355h138v193c0 25-18 41-42 41h-54c-24 0-42-16-42-41V355Z" fill="url(#glass)"/>
+    <path d="M790 547c29 13 80 13 109 0" stroke="#FFF" stroke-opacity=".72" stroke-width="4"/>
+    <!-- Coffee in a petite ceramic cup -->
+    <ellipse cx="1021" cy="551" rx="92" ry="16" fill="#100E0D" fill-opacity=".38"/>
+    <path d="M953 433h124v80c0 32-23 55-56 55h-12c-33 0-56-23-56-55v-80Z" fill="#E8D9C2"/>
+    <ellipse cx="1015" cy="434" rx="62" ry="17" fill="#FFF4E1"/>
+    <ellipse cx="1015" cy="436" rx="51" ry="11" fill="url(#coffee)"/>
+    <path d="M1077 452h16c22 0 34 14 34 35s-12 35-34 35h-17" stroke="#E8D9C2" stroke-width="14" stroke-linecap="round"/>
+    <path d="M977 434h76v58c0 20-17 36-38 36h-3c-20 0-35-15-35-35v-59Z" fill="url(#glass)" opacity=".55"/>
+    <path d="M1001 420c-11-17 8-24-2-40M1030 418c-12-19 9-24-1-42" stroke="#F3E5CA" stroke-opacity=".58" stroke-width="5" stroke-linecap="round"/>
+    <path d="M967 567h112" stroke="#D7B985" stroke-opacity=".55" stroke-width="3"/>
+  </g>
+  <rect x="43" y="42" width="1114" height="676" rx="10" stroke="#D6C18F" stroke-opacity=".24" stroke-width="2"/>
+</svg>

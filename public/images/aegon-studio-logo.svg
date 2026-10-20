@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 410 86" role="img" aria-labelledby="title desc">
+  <title id="title">Aegon Studio</title>
+  <desc id="desc">Aegon Studio web design wordmark</desc>
+  <circle cx="43" cy="43" r="37" fill="none" stroke="#c9b47b" stroke-width="1.5"/>
+  <path d="M22 60 43 22l21 38M31 45h24" fill="none" stroke="#e5d7ac" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="100" y="48" fill="#f1ead8" font-family="Georgia,serif" font-size="32" letter-spacing="5">AEGON</text>
+  <text x="102" y="68" fill="#c9b47b" font-family="Arial,sans-serif" font-size="10" letter-spacing="8">STUDIO</text>
+</svg>
