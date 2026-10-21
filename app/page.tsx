@@ -63,6 +63,7 @@ const contactLinks = {
   email: 'mailto:dineshvenkatachalam0@gmail.com',
   businessEmail: 'mailto:info.virginbites@gmail.com',
   ceoCall: `tel:${ceoPhone}`,
+  ceoWhatsApp: `https://wa.me/${ceoPhone.replace('+', '')}`,
   maps: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`Virgin Bites ${cafeAddress}`)}`,
   studioInstagram: 'https://www.instagram.com/aegonstudioz/',
   studioEmail: 'https://mail.google.com/mail/?view=cm&fs=1&to=aegonstudioz%40gmail.com',
@@ -112,6 +113,7 @@ export default function Home() {
           <a href="#menu" onClick={() => setNavOpen(false)}>Menu</a>
           <a href="#about" onClick={() => setNavOpen(false)}>Our kitchen</a>
           <a href="#stalls" onClick={() => setNavOpen(false)}>Event stalls</a>
+          <a href="#stall-history" onClick={() => setNavOpen(false)}>Past stalls</a>
           <a href="#contact" onClick={() => setNavOpen(false)}>Contact</a>
         </nav>
         <div className="nav-actions">
@@ -177,15 +179,26 @@ export default function Home() {
         <div className="intro-grid"><h2>Your favourites,<br /><em>made fresh.</em></h2><div><p className="lead">A little something for every craving.</p><p>Drop in for a quick bite, catch up over a cold drink, or bring your friends and family around the table. We’d love to help you choose.</p><a href="#contact" className="text-link">Talk to Mr. Dinesh <span>→</span></a></div></div>
       </section>
 
+      <section className="stall-history section" id="stall-history">
+        <div className="stall-history-inner">
+          <div className="section-kicker">04 / PAST STALL APPEARANCES</div>
+          <div className="stall-history-heading"><h2>Good food finds<br /><em>its people.</em></h2><p>We’ve loved bringing Virgin Bites favourites to campus communities. Here are a couple of places we’ve served.</p></div>
+          <div className="stall-history-list">
+            <article className="stall-history-card"><span className="stall-history-number">01</span><div className="stall-history-copy"><span className="stall-history-label">CAMPUS EVENT</span><h3>PSG Institute of Technology and Applied Research</h3><p>PSG iTech</p></div><span className="stall-history-mark" aria-hidden="true">✦</span></article>
+            <article className="stall-history-card"><span className="stall-history-number">02</span><div className="stall-history-copy"><span className="stall-history-label">SCHOOL EVENT</span><h3>Sri Chaitanya Techno School</h3><p>Virgin Bites stall favourites, served with love.</p></div><span className="stall-history-mark" aria-hidden="true">✦</span></article>
+          </div>
+        </div>
+      </section>
+
       <section className="stall-promo section" id="stalls">
         <div className="stall-photo" role="img" aria-label="Virgin Bites burgers with fries" />
-        <div className="stall-copy"><div className="section-kicker">04 / VIRGIN BITES AT YOUR EVENT</div><p className="promo-overline">COLLEGE FETS · CONVENTIONS · COMMUNITY EVENTS</p><h2>Bring great food<br /><em>to the crowd.</em></h2><p>Planning a college fest, convention or community event? Bring Virgin Bites favourites to your guests with a welcoming food stall made for good company.</p><a className="btn dark" href={contactLinks.whatsapp + '?text=Hello%20Mr.%20Dinesh%2C%20I%20would%20like%20to%20enquire%20about%20a%20Virgin%20Bites%20food%20stall%20for%20an%20event.'} target="_blank" rel="noreferrer">Enquire about an event stall <span>↗</span></a></div>
+        <div className="stall-copy"><div className="section-kicker">05 / VIRGIN BITES AT YOUR EVENT</div><p className="promo-overline">COLLEGE FESTS · CONVENTIONS · COMMUNITY EVENTS</p><h2>Bring great food<br /><em>to the crowd.</em></h2><p>Planning a college fest, convention or community event? Bring Virgin Bites favourites to your guests with a welcoming food stall made for good company.</p><a className="btn dark" href={contactLinks.whatsapp + '?text=Hello%20Mr.%20Dinesh%2C%20I%20would%20like%20to%20enquire%20about%20a%20Virgin%20Bites%20food%20stall%20for%20an%20event.'} target="_blank" rel="noreferrer">Enquire about an event stall <span>↗</span></a></div>
       </section>
 
       <section className="contact-section section" id="contact">
-        <div className="contact-card"><div className="section-kicker">05 / WE’RE HERE TO HELP</div><h2>Let’s make it <em>delicious.</em></h2><p>For café visits, bulk quantities and event stalls, reach the right person directly.</p>
+        <div className="contact-card"><div className="section-kicker">06 / WE’RE HERE TO HELP</div><h2>Let’s make it <em>delicious.</em></h2><p>For café visits, bulk quantities and event stalls, reach the right person directly.</p>
           <div className="contact-people">
-            <article className="contact-person contact-person-ceo"><div className="contact-person-top"><span className="contact-monogram">N</span><span className="contact-role">CHIEF EXECUTIVE OFFICER</span></div><strong>NANDHANAA K.S</strong><a className="contact-phone" href={contactLinks.ceoCall}>+91 77082 74141</a><a className="btn contact-call" href={contactLinks.ceoCall}><span className="contact-action-icon" aria-hidden="true">☎</span>Call Nandhanaa<span className="contact-action-arrow" aria-hidden="true">↗</span></a></article>
+            <article className="contact-person contact-person-ceo"><div className="contact-person-top"><span className="contact-monogram">N</span><span className="contact-role">CHIEF EXECUTIVE OFFICER</span></div><strong>NANDHANAA K.S</strong><a className="contact-phone" href={contactLinks.ceoCall}>+91 77082 74141</a><div className="person-actions"><a className="btn contact-call" href={contactLinks.ceoCall}><span className="contact-action-icon" aria-hidden="true">☎</span>Call Nandhanaa<span className="contact-action-arrow" aria-hidden="true">↗</span></a><a className="btn whatsapp" href={contactLinks.ceoWhatsApp} target="_blank" rel="noreferrer"><span className="contact-action-icon" aria-hidden="true">◉</span>WhatsApp<span className="contact-action-arrow" aria-hidden="true">↗</span></a></div></article>
             <article className="contact-person contact-person-owner"><div className="contact-person-top"><span className="contact-monogram">D</span><span className="contact-role">PROPRIETOR</span></div><strong>DINESH V</strong><a className="contact-phone" href={contactLinks.call}>+91 99449 19062</a><div className="person-actions"><a className="btn contact-call" href={contactLinks.call}><span className="contact-action-icon" aria-hidden="true">☎</span>Call Dinesh<span className="contact-action-arrow" aria-hidden="true">↗</span></a><a className="btn whatsapp" href={contactLinks.whatsapp} target="_blank" rel="noreferrer"><span className="contact-action-icon" aria-hidden="true">◉</span>WhatsApp<span className="contact-action-arrow" aria-hidden="true">↗</span></a></div></article>
           </div>
           <div className="contact-emails"><a href={contactLinks.email}>dineshvenkatachalam0@gmail.com</a><a href={contactLinks.businessEmail}>info.virginbites@gmail.com</a></div>
@@ -197,8 +210,8 @@ export default function Home() {
 
       <footer>
         <div className="footer-brand"><Image src="/images/virgin-bites-logo.jpeg" alt="Virgin Bites" width={210} height={92} /><p>Unadulterated Love.</p></div>
-        <div><span>EXPLORE</span><a href="#menu">Menu</a><a href="#about">Our kitchen</a><a href="#stalls">Event stalls</a></div>
-        <div><span>CONTACT</span><a href={contactLinks.call}>Call Dinesh V</a><a href={contactLinks.whatsapp} target="_blank" rel="noreferrer">WhatsApp</a><a href={contactLinks.ceoCall}>Call Nandhanaa K.S</a><a href={contactLinks.maps} target="_blank" rel="noreferrer">Head office location</a></div>
+        <div><span>EXPLORE</span><a href="#menu">Menu</a><a href="#about">Our kitchen</a><a href="#stall-history">Past stalls</a><a href="#stalls">Event stalls</a></div>
+        <div><span>CONTACT</span><a href={contactLinks.call}>Call Dinesh V</a><a href={contactLinks.whatsapp} target="_blank" rel="noreferrer">WhatsApp</a><a href={contactLinks.ceoCall}>Call Nandhanaa K.S</a><a href={contactLinks.ceoWhatsApp} target="_blank" rel="noreferrer">WhatsApp Nandhanaa K.S</a><a href={contactLinks.maps} target="_blank" rel="noreferrer">Head office location</a></div>
         <div><span>EMAIL</span><a href={contactLinks.email}>dineshvenkatachalam0@gmail.com</a><a href={contactLinks.businessEmail}>info.virginbites@gmail.com</a></div>
       </footer>
       <div className="footer-bottom"><span>© 2026 Virgin Bites</span><span>Unadulterated Love</span></div>
