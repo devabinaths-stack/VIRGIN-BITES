@@ -205,6 +205,22 @@ body{overflow-x:hidden}
 .stall-copy>*{position:relative;z-index:1}
 .stall-copy h2{font-size:clamp(45px,5vw,68px)}
 .stall-copy .btn.dark{border-radius:8px;box-shadow:0 10px 24px #07150e30}
+.stall-history{scroll-margin-top:80px;background:radial-gradient(ellipse at 90% 10%,#d7c28c16,transparent 30%),linear-gradient(135deg,#0d2b1e,#071910);color:#f9f5ec}
+.stall-history-inner{max-width:1120px;margin:0 auto}
+.stall-history>.stall-history-inner>.section-kicker{color:#d6bf82}
+.stall-history-heading{display:grid;grid-template-columns:1.1fr .9fr;align-items:end;gap:32px;margin:22px 0 34px}
+.stall-history-heading h2{margin:0;font:500 clamp(44px,6vw,72px)/.98 'Playfair Display',Georgia,serif;letter-spacing:-.04em}
+.stall-history-heading h2 em{color:#d7c28c}
+.stall-history-heading>p{max-width:470px;margin:0 0 4px;color:#d5ded6;font-size:14px;line-height:1.85}
+.stall-history-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.stall-history-card{position:relative;isolation:isolate;display:flex;align-items:center;gap:21px;min-height:190px;padding:25px 27px;overflow:hidden;border:1px solid #e4d3a12b;border-radius:15px;background:linear-gradient(145deg,#ffffff10,#ffffff06);box-shadow:0 18px 42px #00000015;transition:transform .24s,border-color .24s,background .24s}
+.stall-history-card:hover{transform:translateY(-4px);border-color:#d7c28c77;background:linear-gradient(145deg,#ffffff17,#ffffff09)}
+.stall-history-number{flex:none;color:#d5bd7c;font:italic 42px/1 'Playfair Display',Georgia,serif}
+.stall-history-copy{max-width:430px;padding-right:20px}
+.stall-history-label{color:#d5bd7c;font-size:8px;letter-spacing:.2em;font-weight:700}
+.stall-history-copy h3{margin:10px 0 6px;color:#fffaf0;font:500 22px/1.2 'Playfair Display',Georgia,serif}
+.stall-history-copy p{margin:0;color:#c2ccc3;font-size:11px;line-height:1.65}
+.stall-history-mark{position:absolute;right:15px;top:10px;color:#e0ce9a26;font-size:47px}
 .contact-section{scroll-margin-top:80px;background:radial-gradient(ellipse at 10% 8%,#d7c28c2b,transparent 24%),var(--cream)}
 .contact-card{max-width:980px;margin:0 auto;padding:clamp(34px,6vw,70px);border:1px solid #e8dfd0;border-radius:24px;background:linear-gradient(145deg,#fffdf9,#f7f0e5);box-shadow:0 28px 70px #432b1514}
 .contact-card h2{font-size:clamp(44px,6vw,72px)}
@@ -266,6 +282,9 @@ footer{grid-template-columns:1.7fr 1fr 1.1fr 1fr}
   .stall-promo{grid-template-columns:1fr;min-height:auto}
   .stall-photo{min-height:390px}
   .stall-copy{padding:60px 8vw}
+  .stall-history-heading{grid-template-columns:1fr;gap:16px}
+  .stall-history-heading>p{max-width:600px}
+  .stall-history-list{grid-template-columns:1fr}
   .aegon-endcap-inner{grid-template-columns:190px minmax(0,1fr);gap:32px}
   .aegon-links{grid-template-columns:1fr}
 }
@@ -314,6 +333,18 @@ footer{grid-template-columns:1.7fr 1fr 1.1fr 1fr}
   .stall-copy h2{font-size:clamp(44px,12vw,58px)}
   .stall-copy>p:not(.promo-overline){font-size:13px}
   .stall-copy .btn.dark{width:100%;justify-content:space-between;padding:15px 16px}
+  .stall-history{padding:68px 6vw}
+  .stall-history-heading{margin:17px 0 25px}
+  .stall-history-heading h2{font-size:clamp(42px,12vw,58px)}
+  .stall-history-heading>p{font-size:12px;line-height:1.75}
+  .stall-history-list{gap:10px}
+  .stall-history-card{min-height:154px;padding:20px 17px;gap:14px;border-radius:12px}
+  .stall-history-number{font-size:34px}
+  .stall-history-copy{padding-right:9px}
+  .stall-history-label{font-size:7px}
+  .stall-history-copy h3{font-size:19px;line-height:1.25}
+  .stall-history-copy p{font-size:10px}
+  .stall-history-mark{right:9px;top:7px;font-size:36px}
   .contact-section{padding:70px 5vw}
   .contact-card{padding:34px 20px 27px;border-radius:18px}
   .contact-card h2{font-size:clamp(42px,11vw,56px)}
